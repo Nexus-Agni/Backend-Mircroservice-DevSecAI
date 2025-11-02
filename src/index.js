@@ -6,7 +6,7 @@ async function startServer() {
     try {
         await connectDB()
         const server = app.listen(process.env.PORT, ()=>{
-            console.log(`Server listening at : http://localhost:3000:${process.env.PORT}`);
+            console.log(`Server listening at : http://localhost:${process.env.PORT}`);
         })
         
         const shutdown = async () => {
